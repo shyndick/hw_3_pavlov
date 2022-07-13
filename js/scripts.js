@@ -96,18 +96,19 @@
 // число, то вывести сообщение об ошибке ввода. При подсчете учесть, что пользователь
 // может ввести отрицательное значение
 
-// let sum = 0,
-//     num = 0;
+let sum = 0,
+    num = 0,
+    x = +prompt('Введите число или ничего',);
 
-// for(let x = +prompt('ssjgdfkjn'); x = 0; x++) {
-//     console.log (x)
-//     console.log (sum += x);
-//     console.log (num++); 
-//     if (x == 0) {
-//         console.log (sum);
-//         console.log (sum / num);
-//     }
-// }
+while (x != 0 && x != '') {
+    sum += x;
+    num++;
+    x = +prompt('Введите число или ничего'); 
+}
+
+document.write('Сумма: ' + sum + '<br>');
+document.write('Количество вводов: ' + num + '<br>')
+document.write('Среднее арифметическое: ' + sum / num);
 
 
 // 9. Дана строка с числами разделенными пробелами «4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36
@@ -120,23 +121,21 @@
 // c. находит сумму цифр числа n;
 // d. меняет порядок цифр числа n на обратный.
 
-let n = 739,
-    str = String(n),
-    schet = 0,
-    sum = 0;
-    console.log(str, typeof str)
+// let n = 739,
+//     str = String(n),
+//     schet = 0,
+//     sum = 0;
+//     console.log(str, typeof str)
 
-for (let i = 0; i <= 2; i++) {
-    document.write(str[i] + '<br>');
-    ++schet;
-    sum = sum + +str[i];
-    }
+// for (let i = 0; i <= 2; i++) {
+//     document.write(str[i] + '<br>');
+//     ++schet;
+//     sum = sum + +str[i];
+//     }
 
-    document.write('цифр в числе n ' + schet + '<br>');
-    document.write('сумма цифр числа n ' + sum + '<br>');
-    document.write('Порядок цифр числа наоборот ')
-for(let x = 2; x >= 0; --x) {
-    document.write(+str[x]);
-}
-
-
+//     document.write('цифр в числе n ' + schet + '<br>');
+//     document.write('сумма цифр числа n ' + sum + '<br>');
+//     document.write('Порядок цифр числа наоборот ')
+// for(let x = 2; x >= 0; --x) {
+//     document.write(+str[x]);
+// }
